@@ -4,8 +4,10 @@ package com.gracegh.appwithloginpage;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "Login")
 public class User {
 
     @Id

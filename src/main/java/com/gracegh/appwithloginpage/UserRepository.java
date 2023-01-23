@@ -6,7 +6,8 @@ import org.springframework.stereotype.Repository;
 //Step 5: this is the third class I created...
 @Repository
 public interface UserRepository extends JpaRepository <User, Long>{
+
+    User findByUsername(String username); //step 10:
 }
 
 
-//Provide the details to Spring Security
